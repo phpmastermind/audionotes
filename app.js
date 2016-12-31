@@ -4,7 +4,7 @@ var speech = require('./recognize')
 var fs = require('fs');
 var wav = require('wav');
 
-var port = 8080;
+var port = 3000;
 var outFile = 'demo.wav';
 var filename = 'audio.raw';
 
