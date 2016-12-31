@@ -6,10 +6,16 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "@google-cloud/speech": "0.5.0",
     "binaryjs": "latest",
+    "emflac": "^0.2.0",
     "express": "latest",
     "jade": "latest",
+    "node-record-lpcm16": "0.1.4",
     "wav": "latest"
   },
-  "author": "gabrielpoca"
+  "author": "gabrielpoca",
+  "devDependencies": {
+    "emflac": "^0.2.0"
+  }
 }
