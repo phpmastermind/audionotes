@@ -4,7 +4,7 @@ var speech = require('./recognize')
 var fs = require('fs');
 var wav = require('wav');
 
-var port = 3700;
+var port = 8080;
 var outFile = 'demo.wav';
 var filename = 'audio.raw';
 
@@ -27,9 +27,12 @@ app.get('/stream', function (req, res) {
   }); 
 })
 
-app.listen(port);
+app.listen(port, function(){
+  console.log('Example app listening on port '+ port);
+  console.log(speech);
+});
 
-console.log('server open on port ' + port);
+//console.log('server open on port ' + port);
 
 binaryServer = BinaryServer({port: 9001});
 
